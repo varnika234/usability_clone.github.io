@@ -1,0 +1,359 @@
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+ }
+ p{
+   color: black !important;
+ }
+ :root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+ }
+ body{
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+ }
+ h1{
+    font-size: 3rem;
+ }
+ h2{
+    font-size: 2rem;
+ }
+ h3{
+    font-size: 1.5rem;
+ }
+ p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+ }
+ a{
+    text-decoration: none;
+    display: inline-block;
+ }
+ .nav-links li{
+    list-style: none;
+ }
+ /*utility text*/
+ .small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+    height: 50px;
+ }
+ .container{
+    max-width: 1180px;
+    margin-inline:auto ;
+    padding-inline: var(--padding-inline-section);
+ }
+ .flex{
+    display: flex;
+    align-items: center;
+ }
+ .hover-links{
+     color:var(--primary-text-color)
+}
+.hover-links:hover {
+    color: var(--accent-color);
+    transition-property: 0.2s ease-out;
+}
+.secondary-btn{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px ;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+ }
+ .secondary-btn:hover{
+    background-color: var(--accent-color-dark);
+ }
+ .primary-btn{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ;
+ }
+ .primary-btn:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color)!important;
+ }
+
+ /*top banner */
+ .top-banner{
+    background-color:rgb(243, 147, 163);
+    background-image: url(./assets/asset\ 31.svg);
+    background-size: 300px;
+ }
+ .banner-text{
+    color: white;
+    height: 3.5rem;
+    padding: 15px 30px ;
+    text-align: center;
+ }
+
+ /*nav bar */
+ .main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+ }
+.company-logo img{
+    width: 200px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 40px;
+}
+
+/*header section */
+header{
+    padding: 50px var(--padding-inline-section);
+    
+}
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+.header-left{
+    max-width:40vw ;
+}
+.header-left h1{
+    margin-top: 20px;
+}
+.get-started-btn{
+    margin-top:30px ;
+}
+.header-right img{
+    height: 400px;
+}
+
+/*company-section*/
+.company-header{
+    text-align: center;
+    margin-block: 10px;
+    color: var(--primary-text-color);
+}
+.logos{
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.logo {
+    height: 45px;
+}
+
+/*features section */
+.feature-section{
+   padding: 80px var(--padding-inline-section);
+   margin: 100px;
+   background-image: url(./assets/bgi.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.feature-header{
+   text-align: center;
+}
+.feature-header h2{
+   text-align: center;
+   margin-bottom: 25px;
+}
+.feature-area{
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap:40px;
+   margin-top: 20px;
+}
+.feature-card{
+   flex-direction: column;
+   gap: 20px;
+   max-width: 30%;
+   text-align: center;
+}
+.feature-card img{
+   width: 50px;
+}
+
+/* big features  */
+.big-feature-section{
+   margin: -100px;
+}
+.big-feature-right img{
+   width: 80%;
+}
+.img img{
+   width:50px;
+   margin: 20px;
+}
+.big-feature-left{
+   width: 50%;
+   flex-direction: column;
+   gap:20px;
+}
+.philiphs{
+    color: #2294ed ;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.c2{
+   margin-left: 200px;
+}
+.c2 img{
+   width:95%;
+}
+.economist{
+   font-size: x-small;
+   width: 120px;
+   font-weight: 200;
+   border:1px solid red;
+   color:white;
+   background-color: red;
+   padding: 10px;
+}
+
+/* example section */
+
+.example-section{
+   margin-top: 200px;
+}
+.example-data{
+   text-align: center;
+}
+.example-data a{
+   margin: 15px;
+}
+.example-card{
+   width: 32%;
+   position: relative;
+   min-height: 300px;
+   background: black;
+}
+.example-area{
+   margin-block: 30px;
+   gap:2rem; 
+}
+.example-card:hover{
+   cursor: pointer;
+   box-shadow: 0 0 10px gray;
+}
+.card-text{
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
+   right: 20px;
+   color: white;
+}
+.e1{
+   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(assets/img\ \(2\).jpeg);
+}
+.e2{
+   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(assets/img\ \(1\).jpeg);
+}
+.e3{
+   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(assets/img\ \(3\).jpeg);
+}
+.e4{
+   background: linear-gradient(rgb(0,0,0,0.1), rgb(0,0,0,0.8)), url(assets/img\ \(4\).jpeg);
+}
+ .cta-sec{
+   background-color: #183b54;
+   padding: 50px;
+} 
+.bebkoof{
+   flex-direction: column;
+   /* justify-content: left; */
+   align-items: self-start;
+   gap: 20px;
+}
+.data{
+   width: 50%;
+}
+.data h1, h3, h4{
+   color: white;
+}
+.right li{
+   margin-top: 30px;
+   color: white;
+}
+.left li{
+   margin-top: 30px;
+   color: white;
+}
+.list{
+   justify-content: space-evenly;
+}
+.picture img{
+   width: 45rem;
+}
+.div{
+   margin-top: 30px;
+   margin-left: 0px;
+   color: white !important;
+   text-align: center;
+}
+.compartment{
+   flex-direction: column;
+   justify-content: space-evenly;
+   height: 400px;
+}
+.compartment p {
+color: black !important;
+}
+
+.full-footer{
+   background-color: rgb(235, 244, 247);
+   justify-content: space-between;
+   width: 100%;
+   height: 30rem;
+}
+.com-div li{
+   margin: 10px;
+}
+
+.col-1 img{
+   width: 10rem;
+   }
+.head{
+   justify-content: space-around;
+   width: 30%;
+   
+}
+.head p{
+   font-size: small;
+   font-weight: 800 !important;
+}
+.subfooter{
+   height: 5rem;
+   background: linear-gradient(rgb(83, 120, 163), rgb(125, 164, 197));
+background-color: #4caaf2;
+justify-content: center;
+}
+.foot-img{
+   margin-left: 10rem;
+   width: 30%;
+}
+.foot-img img{
+   width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
