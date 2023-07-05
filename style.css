@@ -156,9 +156,10 @@ header{
 .feature-section{
    padding: 80px var(--padding-inline-section);
    margin: 100px;
-   background-image: url(./assets/bgi.jpg);
    background-repeat: no-repeat;
-   background-position: center;
+  background-image: url(./assets/bgi.png);
+   background-position: 50% 80%;
+   background-size: 50%;
 }
 .feature-header{
    text-align: center;
